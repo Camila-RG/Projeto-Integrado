@@ -89,3 +89,4 @@ Durante toda a partida, o tempo restante e a pontuação atualizada são mostrad
 ---
 
 ## Vídeo Explicativo
+[Link do vídeo explicativo](https://drive.google.com/drive/folders/1H8pYX1uahgJAr60E5vb3V_4VGKynUMVj)
