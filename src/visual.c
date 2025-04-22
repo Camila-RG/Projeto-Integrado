@@ -77,6 +77,7 @@ void updatedisplay() {
             gpio_put(LED_G_PIN, 0); 
             gerar_novo_alvo();
             contato_contador = 0;
+            play_coin(BUZZER_PIN);
         }
     } else {
         contato_contador = 0;

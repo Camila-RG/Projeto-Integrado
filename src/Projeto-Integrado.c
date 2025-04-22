@@ -106,6 +106,7 @@ int main(){
                 mostrar_game_over();
                 char buffer[50];
                 sprintf(buffer, "GAME OVER! Pontos: %d", score);
+                uart_puts(UART_ID, "Jogo finalizado!");
                 uart_puts(UART_ID, buffer);
                 acender_todos_leds_vermelho();
                 game_over_enviado = false;
