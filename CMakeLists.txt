@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Projeto-Integrado src/Projeto-Integrado.c src/setup.c src/buzzer.c src/ssd1306.c)
+add_executable(Projeto-Integrado src/Projeto-Integrado.c src/setup.c src/buzzer.c src/ssd1306.c src/matriz_leds.c src/visual.c)
 
 pico_generate_pio_header(Projeto-Integrado ${CMAKE_CURRENT_LIST_DIR}/pio_matrix.pio)
 
