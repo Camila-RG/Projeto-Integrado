@@ -26,6 +26,14 @@ O jogo tem duração de **40 segundos**.
 - Música de vitória 🎵 ou derrota 😢 via buzzer
 - Display OLED mostrando **score** e **tempo** 📟
 - Botão físico para reiniciar o jogo 🔄
+  
+Entretanto, nem todos os alvos exibidos são válidos para pontuação — sendo necessário que o jogador utilize o botão do joystick para gerar um novo alvo aleatório quando perceber que o atual não pontua.
+Essa mecânica introduz uma camada estratégica ao jogo, incentivando o jogador a gerenciar rapidamente seu tempo e seus movimentos.
+
+Se o jogador alcançar 10 pontos dentro do tempo, o sistema exibe um coração no display e toca uma música de vitória através do buzzer.
+Caso contrário, ao fim do tempo, é exibida a mensagem "GAME OVER" e reproduzido um som de derrota.
+
+Durante toda a partida, o tempo restante e a pontuação atualizada são mostrados no display OLED em tempo real.
 
 ---
 
