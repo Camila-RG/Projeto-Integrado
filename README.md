@@ -1,4 +1,4 @@
-# Jogo com Joystick e Matriz de LEDs
+# LedHunter - Jogo com Joystick e Matriz de LEDs
 
 Repositório destinado ao desenvolvimento do projeto prático individual, com o objetivo de revisar e consolidar os conhecimentos adquiridos sobre o microcontrolador RP2040 e os principais recursos disponíveis na placa de desenvolvimento BitDogLab.
 
