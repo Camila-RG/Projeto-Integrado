@@ -35,7 +35,7 @@ void gpio_irq_handler(uint gpio, uint32_t events)
     uint32_t current_time = to_us_since_boot(get_absolute_time());
 
     if (current_time - last_time < 200000) {
-        // Menos de 200ms, ignorar (estamos "rebatendo" ruído)
+        // Menos de 200ms
         return;
     }
     last_time = current_time; // Atualiza tempo da última ação válida
@@ -49,7 +49,7 @@ void gpio_irq_handler(uint gpio, uint32_t events)
         // Botão B pressionado
         gpio_set_irq_enabled(BUTTON_A, GPIO_IRQ_EDGE_FALL, false);
         gpio_set_irq_enabled(BUTTON_B, GPIO_IRQ_EDGE_FALL, false);
-        uart_puts(UART_ID, "HABILITANDO O MODO GRAVACAO\n");
+        uart_puts(UART_ID, "HABILITANDO O MODO GRAVACAO");
         printf("HABILITANDO O MODO GRAVAÇÃO");
         sleep_ms(100);
         reset_usb_boot(0,0);
@@ -71,8 +71,8 @@ int main(){
      uart_init(UART_ID, BAUD_RATE);
 
     // Configura os pinos GPIO para a UART
-    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART); // Configura o pino 0 para TX
-    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART); // Configura o pino 1 para RX
+    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
+    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
     
     joystick_init(); // inicializa o joystick + display
     abertura_jogo(); // abertura do jogo com matriz de leds e ssd1306
